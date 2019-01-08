@@ -9,9 +9,15 @@
 				'age' => readline('Entrez son Age : '),
 				];
 			$nbpersonne++;
-			prompt('personne bien ajouter')
+			echo "personne bien ajouter\n";
 		}
-		
+		if ($line == 'v'){
+			foreach($personne as $per){
+				if ($per['age'] >= 18){
+					echo $per['nom'].' '.$per['prenom']."\n";
+				}
+			}
+		}
 		
 		
 		
